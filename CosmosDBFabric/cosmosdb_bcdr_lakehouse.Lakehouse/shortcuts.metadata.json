@@ -1,0 +1,41 @@
+[
+  {
+    "name": "TaxiRecords3",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/CosmosDBDrill1105DB/TaxiRecords3",
+        "itemId": "ced86271-baa8-80b4-4b3a-2610846f0501",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  },
+  {
+    "name": "TaxiRecords2",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/CosmosDBDrill1105DB/TaxiRecords2",
+        "itemId": "ced86271-baa8-80b4-4b3a-2610846f0501",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  },
+  {
+    "name": "TaxiRecords",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/CosmosDBDrill1105DB/TaxiRecords",
+        "itemId": "ced86271-baa8-80b4-4b3a-2610846f0501",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  }
+]

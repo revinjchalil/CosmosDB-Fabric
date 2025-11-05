@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "cosmosdb_bcdr_lakehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e7bac6da-a096-8af8-4706-b06bd091141f"
+  }
+}

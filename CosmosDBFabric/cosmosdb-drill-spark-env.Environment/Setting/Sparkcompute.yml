@@ -1,0 +1,17 @@
+enable_native_execution_engine: false
+driver_cores: 8
+driver_memory: 56g
+executor_cores: 8
+executor_memory: 56g
+dynamic_executor_allocation:
+  enabled: true
+  min_executors: 1
+  max_executors: 9
+spark_conf:
+  spark.sql.catalog.cosmosCatalog: com.azure.cosmos.spark.CosmosCatalog
+  spark.sql.catalog.cosmosCatalog.spark.cosmos.accountDataResolverServiceName: com.azure.cosmos.spark.fabric.FabricAccountDataResolver
+  spark.sql.catalog.cosmosCatalog.spark.cosmos.useGatewayMode: true
+  spark.sql.catalog.cosmosCatalog.spark.cosmos.auth.type: AccessToken
+  spark.sql.catalog.cosmosCatalog.spark.cosmos.auth.aad.audience: https://cosmos.azure.com/.default
+  spark.sql.catalog.cosmosCatalog.spark.cosmos.accountEndpoint: https://846f0501-2610-4b3a-80b4-baa8ced86271.z84.dxt-sql.cosmos.fabric.microsoft.com:443/
+runtime_version: 1.3

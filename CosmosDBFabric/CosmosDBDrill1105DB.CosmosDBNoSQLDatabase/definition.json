@@ -1,0 +1,119 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/CosmosDB/definition/CosmosDB/1.0.0/schema.json",
+  "containers": [
+    {
+      "id": "TaxiRecords3",
+      "conflictResolutionPolicy": {
+        "mode": "LastWriterWins",
+        "conflictResolutionPath": "/_ts",
+        "conflictResolutionProcedure": ""
+      },
+      "defaultTtl": 108000000,
+      "geospatialConfig": {
+        "type": "Geography"
+      },
+      "indexingPolicy": {
+        "automatic": true,
+        "indexingMode": "Consistent",
+        "includedPaths": [],
+        "excludedPaths": [
+          {
+            "path": "/*"
+          },
+          {
+            "path": "/\"_etag\"/?"
+          }
+        ],
+        "compositeIndexes": [],
+        "spatialIndexes": [],
+        "vectorIndexes": [],
+        "fullTextIndexes": []
+      },
+      "partitionKey": {
+        "paths": [
+          "/id"
+        ],
+        "kind": "Hash"
+      },
+      "uniqueKeyPolicy": {
+        "uniqueKeys": []
+      }
+    },
+    {
+      "id": "TaxiRecords2",
+      "conflictResolutionPolicy": {
+        "mode": "LastWriterWins",
+        "conflictResolutionPath": "/_ts",
+        "conflictResolutionProcedure": ""
+      },
+      "defaultTtl": 108000000,
+      "geospatialConfig": {
+        "type": "Geography"
+      },
+      "indexingPolicy": {
+        "automatic": true,
+        "indexingMode": "Consistent",
+        "includedPaths": [],
+        "excludedPaths": [
+          {
+            "path": "/*"
+          },
+          {
+            "path": "/\"_etag\"/?"
+          }
+        ],
+        "compositeIndexes": [],
+        "spatialIndexes": [],
+        "vectorIndexes": [],
+        "fullTextIndexes": []
+      },
+      "partitionKey": {
+        "paths": [
+          "/id"
+        ],
+        "kind": "Hash"
+      },
+      "uniqueKeyPolicy": {
+        "uniqueKeys": []
+      }
+    },
+    {
+      "id": "TaxiRecords",
+      "conflictResolutionPolicy": {
+        "mode": "LastWriterWins",
+        "conflictResolutionPath": "/_ts",
+        "conflictResolutionProcedure": ""
+      },
+      "defaultTtl": 108000000,
+      "geospatialConfig": {
+        "type": "Geography"
+      },
+      "indexingPolicy": {
+        "automatic": true,
+        "indexingMode": "Consistent",
+        "includedPaths": [],
+        "excludedPaths": [
+          {
+            "path": "/*"
+          },
+          {
+            "path": "/\"_etag\"/?"
+          }
+        ],
+        "compositeIndexes": [],
+        "spatialIndexes": [],
+        "vectorIndexes": [],
+        "fullTextIndexes": []
+      },
+      "partitionKey": {
+        "paths": [
+          "/id"
+        ],
+        "kind": "Hash"
+      },
+      "uniqueKeyPolicy": {
+        "uniqueKeys": []
+      }
+    }
+  ]
+}
